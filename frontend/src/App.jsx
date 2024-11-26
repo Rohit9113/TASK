@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ContactForm from "./components/ContactForm";
+import ContactForm from "./components/ContactUs/ContactForm";
+import './App.css';
 
 function App() {
   return (

@@ -1,49 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Holtwood+One+SC&display=swap");
+/* /////// */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Holtwood+One+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap");
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+/* /* NavBar.module.css or another global stylesheet like index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+} */
+
 body {
-  font-family: Arial, sans-serif;
+  @apply font-cormorant;
+  background-color: #f5f5f5;
 }
+@layer utilities {
+  .inner-shadow-top {
+    box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  }
 
-.contact-form {
-  max-width: 500px;
-  margin: 50px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background: #f9f9f9;
-}
+  .blog-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
 
-.contact-form h1 {
-  text-align: center;
-}
+  .blog-content td,
+  .blog-content th {
+    border: 2px solid #ddd;
+    padding: 12px;
+  }
 
-.contact-form div {
-  margin-bottom: 15px;
-}
+  .blog-content tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
 
-.contact-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
+  .blog-content tr:hover {
+    background-color: #ddd;
+  }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
+  .blog-content th {
+    padding-top: 16px 12px;
 
-.contact-form button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background: #0056b3;
+    text-align: left;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
 }
