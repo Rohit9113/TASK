@@ -13,6 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api/contacts", require("./routes/contactRoutes"));
+app.use("/api/academics", require("./routes/academicsRoutes"));
 
 const PORT = process.env.PORT || 5000;
 
